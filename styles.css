@@ -1,110 +1,89 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
-
-
-
 body{
-	margin-left: 30%;
-	margin: 0 auto;
-	color: #ffffff !important;
+margin-left: 30%;
+margin: 0 auto;
+color: #ffffff !important;
 }
 /*--------Front begins---------*/
 
-.front {
-	
-	opacity: .8;
+.front ul {
+	display: inline-block;
+}
 
-}
-.front img{
-	width: 100%;
-	margin: 0 auto;
-}
+
 /*--------Front ends---------*/
-
-
 /*--------Flip begins---------*/
-
 .vertical.flip-container {
-	position: relative;
+position: relative;
 }
-
-	.vertical .back {
-		transform: rotateX(180deg);
-	}
-
-	.vertical.flip-container .flipper {
-		transform-origin: 100% 213.5px; /* half of height */
-	}
-
-	.vertical.flip-container:hover .flipper {
-		transform: rotateX(-180deg);
-	}
-	
-
-	/* entire container, keeps perspective */
+.vertical .back {
+transform: rotateX(180deg);
+}
+.vertical.flip-container .flipper {
+transform-origin: 100% 213.5px; /* half of height */
+}
+.vertical.flip-container:hover .flipper {
+transform: rotateX(-180deg);
+}
+/* entire container, keeps perspective */
 .flip-container {
-	perspective: 10000;
+perspective: 10000;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+transform: rotateY(180deg);
+}
 .flip-container, .front, .back {
-	width: 420px;
-	height: 480px;
+width: 420px;
+height: 480px;
 }
-
 /* flip speed goes here */
 .flipper {
-	transition: 1s;
-	transform-style: preserve-3d;
-	position: relative;
+transition: 1s;
+transform-style: preserve-3d;
+position: relative;
 }
-
 /* hide back of pane during swap */
 .front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+backface-visibility: hidden;
+position: absolute;
 
+}
 /* front pane, placed above back */
 .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+z-index: 2;
+/* for firefox 31 */
+transform: rotateY(0deg);
 }
-
-
+pre code {
+background: transparent;
+}
 /*--------Flip ends---------*/
-/* Styling Starts here*/
-
+/* =============================Styling Starts here====================*/
+ul{
+	display: inline-block;
+}
 .back {
-	transform: rotateY(180deg);
-	font-family: 'Shadows Into Light', cursive, Arial, 'Liberation Sans', FreeSans, sans-serif;
-	font-size: 24px;
-	background-image: linear-gradient(to bottom, #ED303C, #8D121A);
-
+transform: rotateY(180deg);
+font-family: 'Shadows Into Light', cursive, Arial, 'Liberation Sans', FreeSans, sans-serif;
+font-size: 24px;
+background-image: linear-gradient(to bottom, #ED303C, #8D121A);
 }
 h1,p{
-	text-shadow: 0.015em 0.025em 0.025em rgba(0, 0, 0, 0.8), 0 0 0.5em rgba(255, 255, 255, 0.3);
-	padding-left: 0 10px 0 20px !important;
-	margin: 0px;
-	line-height: 100%;
+text-shadow: 0.015em 0.025em 0.025em rgba(0, 0, 0, 0.8), 0 0 0.5em rgba(255, 255, 255, 0.3);
+padding-left: 0 10px 0 20px !important;
+margin: 0px;
+line-height: 100%;
 }
 p{
-	text-align:  center;
-	margin: 2% 0 4% 0;
+text-align: center;
+margin: 2% 0 4% 0;
 }
 .back img{
-	margin-top:10px;
+margin-top:10px;
 }
-/* Styling ENDS here*/
-pre code {
-  background: transparent;
-}
+/* ===========================Styling ENDS here============================*/
